@@ -31,8 +31,8 @@ RUN set -x \
     # sub   2048R/06855C1D 2015-05-25
     
     && cd /opt \
-    && wget -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip \
-    && wget -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc \
+    && wget -o sonarqube.zip https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip \
+    && wget -o sonarqube.zip.asc https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc \
     && unzip sonarqube.zip \
     && mv sonarqube-$SONAR_VERSION sonarqube \
     && chown -R sonarqube:sonarqube sonarqube \
